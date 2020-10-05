@@ -34,6 +34,7 @@ Undo()
 Undo()
 Undo()
 
+#Super_Undo_Code
 for i in range(len(stack)-3):
     if stack[i]=='u' and stack[i+1]=='u' and stack[i+2]=='u' and stack[i+3]=='u':
         a.clear()
