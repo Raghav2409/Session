@@ -1,0 +1,20 @@
+Priority Queue Method:
+
+from queue import PriorityQueue
+pq=PriorityQueue()
+pq.put((1, "ceo1@organisation.org"))
+pq.put((3, "peon@organisation.org"))
+pq.put((1,"ceo3@organisation.org"))
+pq.put((2,"manager@organisation.org"))
+pq.put((1,"ceo2@organisation.org"))
+for i in range(pq.qsize()):
+        print(pq.get()[1])
+        
+        
+Dictionary Method:
+
+emails = {"ceo1@organisation.org":1,"peon@organisation.org":3,"ceo3@organisation.org":1,"manager@organisation.org":2,"ceo2@organisation.org":1}
+send_order = sorted(emails.items(),key=lambda kv:(kv[1],kv[0]))
+for i in range(len(send_order)):
+    print(sent_order[0][0])
+    send_order.pop(0)
