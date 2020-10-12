@@ -16,5 +16,5 @@ Dictionary Method:
 emails = {"ceo1@organisation.org":1,"peon@organisation.org":3,"ceo3@organisation.org":1,"manager@organisation.org":2,"ceo2@organisation.org":1}
 send_order = sorted(emails.items(),key=lambda kv:(kv[1],kv[0]))
 for i in range(len(send_order)):
-    print(sent_order[0][0])
+    print(send_order[0][0])
     send_order.pop(0)
